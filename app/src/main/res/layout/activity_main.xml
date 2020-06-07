@@ -78,7 +78,7 @@
             android:textSize="16sp"
             android:paddingRight="20dp"
             android:textColor="@color/color_black"
-            android:text="010-2222-3333"/>
+            android:text="010-4182-1057"/>
 
         <Button
             android:id="@+id/collBtn"
