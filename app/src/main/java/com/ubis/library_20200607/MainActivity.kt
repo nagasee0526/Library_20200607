@@ -3,6 +3,7 @@ package com.ubis.library_20200607
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : baseActivity() {
@@ -15,6 +16,7 @@ class MainActivity : baseActivity() {
     }
 
     override fun setValues() {
+        Glide.with(mContext).load("https://news.kbs.co.kr/data/news/2019/01/16/4117160_uS4.jpg").into(profileiu)
     }
 
     override fun setEvents() {
