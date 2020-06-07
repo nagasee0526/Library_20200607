@@ -1,6 +1,7 @@
 package com.ubis.library_20200607
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -22,6 +23,12 @@ class MainActivity : baseActivity() {
     override fun setEvents() {
         profileiu.setOnClickListener {
             val myIntent = Intent(mContext, ViewProfileActivity::class.java)
+            startActivity(myIntent)
+        }
+
+        collBtn.setOnClickListener {
+            val MyUrl = Uri.parse("tel:${PhonenumTxt.text}")
+            val myIntent = Intent(Intent.ACTION_CALL, MyUrl)
             startActivity(myIntent)
         }
     }
