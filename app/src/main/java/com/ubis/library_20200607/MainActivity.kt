@@ -1,7 +1,9 @@
 package com.ubis.library_20200607
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : baseActivity() {
 
@@ -16,5 +18,9 @@ class MainActivity : baseActivity() {
     }
 
     override fun setEvents() {
+        profileiu.setOnClickListener {
+            val myIntent = Intent(mContext, ViewProfileActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }

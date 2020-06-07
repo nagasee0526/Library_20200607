@@ -16,10 +16,11 @@
         android:padding="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:id="@+id/profileiu"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:src="@drawable/iu_pic"
-            app:civ_border_width="2dp"
+            app:civ_border_width="4dp"
             app:civ_border_color="@color/color_black"/>
 
     </LinearLayout>
@@ -33,6 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
             android:text="닉네임" />
 
         <TextView
@@ -44,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:paddingRight="20dp"
             android:textColor="@color/color_black"
             android:text="아이유"/>
 
